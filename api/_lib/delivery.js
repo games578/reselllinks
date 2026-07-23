@@ -17,7 +17,7 @@ const PLACEHOLDER = 'REPLACE_ME';
 
 const PRODUCTS = {
   'Ralph Lauren Product Suplier Pack': {
-    links: ['https://https://www.dhgate.com/product/ralpauren-hoodie-mens-rl-hoodies-designer/1116056605.html?f=bm%7Cmatycube%7Cmc%7C&skuId=1539782409787154444',
+    links: ['Ralp Lauren Hoodies https://www.dhgate.com/product/ralpauren-hoodie-mens-rl-hoodies-designer/1116056605.html?f=bm%7Cmatycube%7Cmc%7C&skuId=1539782409787154444',
            'https://https://www.dhgate.com/product/ralpauren-hoodie-mens-rl-hoodies-designer/1116056605.html?f=bm%7Cmatycube%7Cmc%7C&skuId=1539782409787154444',
            ],
   },
