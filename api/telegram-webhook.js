@@ -1,4 +1,4 @@
-const { getValue } = require('./_lib/redis');
+const { getValue, setValue } = require('./_lib/redis');
 
 const BOT_TOKEN = process.env.TELEGRAM_BOT_TOKEN;
 const WEBHOOK_SECRET = process.env.TELEGRAM_WEBHOOK_SECRET;
@@ -19,7 +19,8 @@ async function sendMessage(chatId, text) {
 function formatDelivery(record) {
   const lines = record.items.map((item) => {
     if (item.configured) {
-      return `<b>${item.name}</b>\n${item.link}`;
+      const linksText = item.links.join('\n');
+      return `<b>${item.name}</b>\n${linksText}`;
     }
     return `<b>${item.name}</b>\nYour access link is still being finalized — check back soon, or reply to your order email if it's been a while.`;
   });
@@ -68,6 +69,18 @@ module.exports = async (req, res) => {
     }
 
     const record = JSON.parse(raw);
+
+    if (record.redeemed) {
+      await sendMessage(
+        chatId,
+        "This code has already been used. If you lost your links or need it resent, reply to your order confirmation email."
+      );
+      return res.status(200).json({ ok: true });
+    }
+
+    record.redeemed = true;
+    await setValue(`code:${code}`, JSON.stringify(record));
+
     await sendMessage(chatId, formatDelivery(record));
     return res.status(200).json({ ok: true });
   } catch (err) {
