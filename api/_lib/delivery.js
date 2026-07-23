@@ -34,22 +34,22 @@ const PRODUCTS = {
   'Burberry Supplier Pack': {
     links: [PLACEHOLDER],
   },
-  'Sneaker Supplier Pack': {
+  'Canada Goose Supplier Pack': {
     links: [PLACEHOLDER],
   },
-  'Audio Gear Supplier Pack': {
+  'Prada Gear Supplier Pack': {
     links: [PLACEHOLDER],
   },
-  'Watches Supplier Pack': {
+  'Stüssy Supplier Pack': {
     links: [PLACEHOLDER],
   },
-  'Kitchenware Supplier Pack': {
+  'Chrome Hearts Supplier Pack': {
     links: [PLACEHOLDER],
   },
-  'Outerwear Supplier Pack': {
+  'Moncler Supplier Pack': {
     links: [PLACEHOLDER],
   },
-  'Mobile Accessories Pack': {
+  'Essentials Accessories Pack': {
     links: [PLACEHOLDER],
   },
 };
