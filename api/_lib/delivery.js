@@ -17,7 +17,9 @@ const PLACEHOLDER = 'REPLACE_ME';
 
 const PRODUCTS = {
   'Ralph Lauren Product Suplier Pack': {
-    links: [PLACEHOLDER],
+    links: ['https://https://www.dhgate.com/product/ralpauren-hoodie-mens-rl-hoodies-designer/1116056605.html?f=bm%7Cmatycube%7Cmc%7C&skuId=1539782409787154444',
+           'https://https://www.dhgate.com/product/ralpauren-hoodie-mens-rl-hoodies-designer/1116056605.html?f=bm%7Cmatycube%7Cmc%7C&skuId=1539782409787154444',
+           ],
   },
   'Supreme Product Suplier Pack': {
     links: [PLACEHOLDER],
@@ -58,7 +60,7 @@ const PRODUCTS = {
 //
 // 'Kitchenware Supplier Pack': {
 //   links: [
-//     'https://docs.google.com/document/d/exampleAAA/edit',
+//     'https://https://www.dhgate.com/product/ralpauren-hoodie-mens-rl-hoodies-designer/1116056605.html?f=bm%7Cmatycube%7Cmc%7C&skuId=1539782409787154444',
 //     'https://docs.google.com/document/d/exampleBBB/edit',
 //     'https://drive.google.com/drive/folders/exampleCCC',
 //   ],
